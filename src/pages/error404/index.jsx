@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import '../../styles/Style.css'
+import '../../styles/Style.scss'
 
 export default function Error404(){
     return (
