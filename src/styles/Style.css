@@ -12,13 +12,16 @@
 
 
 
-
 /* Header */
 header {
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
     margin-bottom: 50px;
+}
+
+header img {
+    height: 68px;
 }
 
 .link-style {
@@ -62,4 +65,37 @@ footer {
 p,
 .link-style {
     margin-bottom: 139px;
+}
+
+/* Media query for small device */
+@media (max-width: 767.98px) {
+
+    .globalStyle {
+        margin: 0 20px;
+    }
+
+    /* Header */
+    header img {
+        height: 46px;
+        width: auto;
+    }
+
+    header .link-style {
+        font-size: 12px;
+        margin-left: 26px;
+    }
+
+    /* Erreur 404 */
+    .error404 h1 {
+        font-size: 96px;
+    }
+
+    .error404 p {
+        font-size: 18px;
+    }
+
+    .error404 .link-style {
+        font-size: 14px;
+    }
+
 }

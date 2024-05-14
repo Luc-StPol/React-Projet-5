@@ -16,8 +16,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <div className='globalStyle'>
+    
   <Router>
+  <div className='globalStyle'>
     <Header />
     <Routes>
       <Route path="/" element={<Home />}/>
@@ -25,8 +26,9 @@ root.render(
       <Route path='/logement/:id' element={<Logement />} />
       <Route path='/propos' element={<Propos />} />
     </Routes>
+    </div>
   </Router>
   <Footer />
-  </div>
+  
   </React.StrictMode>,
 )
