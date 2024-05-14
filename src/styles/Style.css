@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reenie+Beanie&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.globalStyle {
+    margin: 0 100px;
+}
+
+
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.link-style {
+    color: black;
+    text-decoration: none;
+    margin-left: 57px;
+}
+
+.link-style:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 66px;
+    padding-bottom: 29px;
+    margin-top: 139px;
+}
+
+/* Erreur 404 */
+.error404 {
+    color: #FF6060;
+    text-align: center;
+}
+
+.error404 h1 {
+    font-size: 288px;
+    font-weight: 700;
+}
+
+.error404 .link-style {
+    text-decoration: underline;
+    margin-left: 0;
+}
+
+.error404 h1,
+p,
+.link-style {
+    margin-bottom: 139px;
+}

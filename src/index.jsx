@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
+import './styles/Style.css'
+
 import Home from './pages/Home';
 import Logement from './pages/Logement';
 import Propos from './pages/Propos';
@@ -14,6 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
+    <div className='globalStyle'>
   <Router>
     <Header />
     <Routes>
@@ -24,5 +27,6 @@ root.render(
     </Routes>
   </Router>
   <Footer />
+  </div>
   </React.StrictMode>,
 )
