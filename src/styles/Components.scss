@@ -1,0 +1,46 @@
+
+// Collapse Component
+.toggle {
+    background-color: #FF6060;
+    padding: 10px 20px 8px 15px;
+    border-radius: 5px;
+    display: flex;
+    
+
+} 
+
+.content-parent {
+    height: 0px;
+    overflow: hidden;
+    transition: height ease 0.5s;
+
+    p{
+        padding: 0.5rem;
+        border-radius: 5px;
+            font-size: 18px;
+            font-weight: 400;
+
+    }
+       
+}
+.toggle {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+        color: white;
+    }
+   
+}
+.toggle-btn {
+    border: none;
+    background-color: #FF6060;
+    .arrowIcone {
+        transition: all .3s ease-in;  
+    }
+    .closed {
+        transform: rotate(0);
+    }
+    .open {
+        transform: rotate(3.142rad);   
+    }
+}
