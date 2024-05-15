@@ -10,7 +10,7 @@ export default function Propos() {
         <img src={bannerImg} alt="montagne" className="imgBanner-propos" />
       </div>
       {propos.map((propos) => (
-        <div className="collapsePropos">
+        <div className="collapsePropos" key={propos.id}>
           <Collapse label={propos.title}>
             <p>{propos.content}</p>
           </Collapse>

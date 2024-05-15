@@ -6,7 +6,6 @@ export default function Collapse(props) {
   const [open, setOpen] = useState(false);
 
   const contentRef = useRef();
-  if (contentRef.current) console.log(contentRef.current.scrollHeight);
 
   function toogle() {
     setOpen(!open);
@@ -26,7 +25,7 @@ export default function Collapse(props) {
         ref={contentRef}
         style={open ? { height: contentRef.current.scrollHeight + 'px' } : { height: '0px' }}
       >
-        <p className="content">{props.children}</p>
+        <div className="content">{props.children}</div>
       </div>
     </div>
   );
