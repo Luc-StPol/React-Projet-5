@@ -24,7 +24,7 @@ export default function Carousel(props) {
   if (pictures.length < 2) {
     return (
       <div className="carousel">
-        <img src={pictures} alt="" />
+        <img src={pictures} alt="" className="picture" />
       </div>
     );
   }

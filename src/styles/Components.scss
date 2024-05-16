@@ -65,11 +65,13 @@
         height: 415px;
         width: 100%;
         object-fit: cover;
+        border-radius: 25px;
     }
     button {
         position: absolute;
         background-color: transparent;
         border: none;
+        top: 35%;
         img {
             height: 79.2px;
             width:  46px; 
@@ -77,14 +79,28 @@
     }
     .prevBtn {
         transform: rotate(-0.25turn);
-        top: 35%;
         left: 15px;
       
     }
     .nextBtn {
         transform: rotate(90deg);
-        top: 35%;
         right: 15px;
         
     }
 }
+
+/* Media query for small device */
+@media (max-width: 767.98px) {
+    .carousel {
+        .picture {
+            height: 255px;
+        }
+        button {
+            top:40%;
+            img {
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+}   
