@@ -26,7 +26,7 @@ root.render(
           <Route path="/propos" element={<Propos />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
-    <Footer />
   </React.StrictMode>
 );

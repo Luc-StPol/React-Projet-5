@@ -1,4 +1,4 @@
-import { useParams } from 'react-router';
+import { Navigate, useParams } from 'react-router';
 import Carousel from '../../components/Carousel';
 import logements from '../../assets/logements.json';
 import '../../styles/Logement.scss';
@@ -9,6 +9,10 @@ import Collapse from '../../components/Collapse';
 export default function Logement() {
   const { logementI } = useParams();
   const logement = logements[logementI];
+
+  if (!logement) {
+    return <Navigate to="*" />;
+  }
 
   return (
     <div>
@@ -54,3 +58,4 @@ export default function Logement() {
     </div>
   );
 }
+
